@@ -15,8 +15,8 @@ function convertCurrency() {
         document.getElementById('result').innerText = "올바른 금액을 입력하세요.";
         return;
     }
-    
-    const url = `/.netlify/functions/exchage?from=${fromCurrency}`;
+
+    const url = `/netlify/functions/exchage?from=${fromCurrency}`;
 
     fetch(url)
         .then(response => response.json())
