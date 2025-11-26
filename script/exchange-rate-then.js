@@ -15,8 +15,7 @@ function convertCurrency() {
         document.getElementById('result').innerText = "올바른 금액을 입력하세요.";
         return;
     }
-
-    // const apiKey = '21f8c2f9ebf8a0abb55bc6a0';
+    
     const url = `/.netlify/functions/exchage?from=${fromCurrency}`;
 
     fetch(url)
